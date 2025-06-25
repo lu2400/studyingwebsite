@@ -1,1 +1,12 @@
 /* Add CSS styles for your web site here and use them in index.html. */
+body {
+    background-color: #fdfaf2;
+    color: #4a4a4a;
+    font-family: sans-serif;
+    text-align: center;
+    }
+h1 {
+    color: #c7a589;
+    text-align: center;
+    }
+      
