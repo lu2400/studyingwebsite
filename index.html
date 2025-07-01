@@ -1,14 +1,12 @@
-
 <!DOCTYPE html>
 <html lang="en"></html>
-<html>
     <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Studying and Self-care!</title>
         <link rel="stylesheet" href="styles.css" />
-        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="star.png" type="image/x-icon" />
         <script type="text/javascript" src="script.js"></script>
     </head>
     <body>
@@ -16,6 +14,16 @@
         <div class = "container">
            
          <header>
+            <header> 
+                <nav> 
+                    <ul> 
+                        <li>
+                            <a href="#home">Home</a></li> 
+                            <li><a href="#tips">Tips</a></li>
+                             <li><a href="#tools">Tools</a></li> 
+                             <li><a href="#contact">Contact</a></li> 
+                            </ul> 
+                        </nav> 
             <h1>✨ Studying and Self-care ✨</h1>
             <p style = "text-align: center;">
                 create a personal paradise for grinding work and glowing up!<br>
@@ -23,33 +31,50 @@
         </header>
 
         <main>
-            <section>
+            <section id = "home">
                 <h2>Soothe your Soul while Studying</h2>
-                <img src = "exam week.jpeg" alt = "a cozy desk setup with a laptop, candle, and plants" />
-                <p>A chill night for putting your mind and to-do list to rest!</p>
-                <p>Create a night for focus sessions, timers, checklist on planners and most importantly, RELAXATION!</p>
+                <img src = "download (2).jpeg" alt = "a cozy desk setup with a laptop, candle, and plants" />
+                <p>a chill night for putting your mind and to-do list to rest!</p>
+                <p>create a night for focus sessions, timers, checklist on planners and most importantly, RELAXATION!</p>
             </section>
-            <section>
+
+            <section id = "tools">
                 <h2>Let's get started!</h2>
+                <h3>checklists!</h3>
                 <img src = "download (4).jpeg" alt = "an aesthetic laptop" />
-                <p><b>Checklists!</b> For remembering what you want to get done!</p>
+                <p><b>checklists!</b> For remembering what you want to get done!</p>
+                <button class="tool-btn" onclick="openChecklist()">Try Checklist Tool</button>
             </section>
 
             <section>
-                <h2>timers!</h2>
-                <img src = "Evelyn Hugo Aesthetic.jpeg" alt = "an aesthetic laptop" />
-                <p><b>Checklists!</b> For remembering what you want to get done!</p>
+                <h3>Timers</h3> 
+                <img src="exam week.jpeg" alt="Aesthetic timer setup on laptop"> 
+                <p><strong>Timers!</strong> For focused study sessions and breaks!</p> 
+                <button onclick="window.open('https://pomofocus.io/', '_blank')">time to time!</button>
             </section>
 
             <section>
-                 <h3>Music of course!</h3>
-                <img src = "#playlist #spotify #studying #macbook #aesthetic_.jpeg" alt = "aesthetic image of a spotify playlist" />
-                 <p>No study sessions are complete without music!</p>
-
+                <h3>Music of course!</h3> 
+                <img src="spotify playlist picture.png" alt="Spotify study playlist on MacBook"> 
+                <p>No study sessions are complete without music!</p>
                 <div class="video-container">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/jfKfPfyJRdk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </section>
-        <div></div>
-    </body>
-</html>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ZbyxjGE885I?si=0AchgHyrMmVMZZ4E"title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <section id="links"> 
+                <h2>helpful resources to start off with!</h2> 
+                <ul> 
+                    <li>
+                        <a href="https://pomofocus.io/" target="_blank">pomodoro timer</a></li> 
+                    <li>
+                        <a href="https://open.spotify.com/playlist/37i9dQZF1DWSSrwtip3vZP" target="_blank">study playlists - spotify</a></li>
+                    <li>
+                        <a href="https://music.apple.com/us/playlist/study-session/pl.dfd203c2337c456ea7dcead8ec64bab8" target="_blank">study playlists - apple music</a></li>
+                     </ul> 
+                    </section> 
+                </main> 
+                <footer id="contact"> 
+                    <h2>contact information</h2> 
+                    <p>Questions about study tips? Reach out!</p> 
+                </footer> 
+            </div> 
+        </body>
+    </html>
