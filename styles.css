@@ -1,12 +1,71 @@
 /* Add CSS styles for your web site here and use them in index.html. */
 body {
-    background-color: #fdfaf2;
-    color: #4a4a4a;
-    font-family: sans-serif;
-    text-align: center;
+    font-family: 'Open Sans', sans-serif; 
+    margin: 0;
+    padding: 0;
+    background-color: #F8F4E3; /*warm colour */
+    color: #4A4A4A; /*dark grey */
+    line-height: 1.6;
+    scroll-behavior: smooth;
     }
+header {
+    background-color: #FAF4E9; /* Light background for header */
+    padding: 15px 0;
+    border-bottom: 1px solid #E0D9C7; 
+    display: flex; 
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; 
+    text-align: center;
+}
+header nav ul li a:hover {
+    color: #B87333; /* gold/orange on hover */
+}
 h1 {
-    color: #c7a589;
-    text-align: center;
+    font-family: 'Playfair Display', serif; 
+    font-size: 3em; 
+    color: #A0835F; /* gold-brown color for title */
+    margin-top: 20px;
+    margin-bottom: 10px;
     }
-      
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2em;
+    color: #8C6F5A;
+    margin-bottom: 30px;
+    }
+h3 {
+       font-family: 'Open Sans', sans-serif;
+    font-size: 1.5em;
+    color: #6F6F6F;
+    margin-bottom: 15px;
+    }
+section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+button {
+    background-color: #B87333; /* Gold/orange button */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+}
+button:hover {
+    background-color: #A0632B; /* darker gold/orange on hover */
+    transform: translateY(-2px);
+}
+footer {
+    background-color: #E6E0D2; /* slightly darker, muted background for footer */
+    color: #6F6F6F;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 50px;
+    font-size: 0.95em;
+}
