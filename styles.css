@@ -42,7 +42,8 @@ header-container {
   flex-direction: column; /* Stack elements vertically */
   align-items: center;
   text-align: center;
-  flex-direction:column;
+  position: relative; /* For positioning hero image */
+  flex-direction: column;
 }
 
 header-container h1 {
@@ -217,11 +218,9 @@ footer p a:hover {
     footer {
         padding: 40px 15px;
     }
-
     footer h2 {
         font-size: 1.8em;
     }
-
     footer p {
         font-size: 0.9em;
     }
