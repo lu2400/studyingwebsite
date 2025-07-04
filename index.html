@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"></html>
+<html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale = 1.0" />
@@ -14,76 +14,101 @@
     </head>
 
     <body>
-        <!-- Add HTML markup elements for your web site below -->
-        <div class = "container">
-         <header>
-            <header> 
-                <nav> 
-                    <ul> 
-                        <li>
-                            <a href="#home">home</a></li> 
-                             <li><a href="#tools">tools</a></li> 
-                             <li><a href="#contact">contact</a></li> 
-                            </ul> 
-                        </nav> 
+    <div class="container">
+        <div class="top-bar">
+            <span class="tagline">your personal oasis!</span>
+            <nav class="main-nav"> <ul>
+                    <li><a href="#home-section">home</a></li> 
+                    <li><a href="#checklists-section">checklists</a></li> 
+                    <li><a href="#timers-section">timers</a></li> 
+                    <li><a href="#music-section">music</a></li>
+                    <li><a href="#study-links">resources</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <header class="header-container"> 
             <h1>✨ Studying and Self-care ✨</h1>
             <p style = "text-align: center;">
-                create a personal paradise for grinding work and glowing up!<br>
-                <strong>Remember:</strong> Studying is important, but so is taking breaks and caring for your mental health!
+                create a personal paradise for grinding work and glowing up!
+                               °˖✧◝(⁰▿⁰)◜✧˖°<br>
+                <span>✧٩(ˊᗜˋ*)و✧*｡</span> </p>
         </header>
 
+        <section class="hero-section"> <section id="home-section">
+            <div class="hero-image">
+                <img src="download (2).jpeg" alt="a cozy desk setup with a laptop, candle, and plants" />
+            </div>
+            <div class="hero-text">
+                <p>Soothe your Soul while Studying!<br>ヘ(^_^ヘ) ヘ(^o^ヘ)</p>
+                <p>A chill night for putting your mind and to-do list to rest!</p>
+                <p>Create a night for focus sessions, timers, checked off planners, and most importantly, <br><strong>RELAXATION!</strong></p>
+            </div>
+        </section>
+        </section>
+
         <main>
-            <section id = "home">
-                <h2>Soothe your Soul while Studying</h2>
-                <img src = "download (2).jpeg" alt = "a cozy desk setup with a laptop, candle, and plants" />
-                <p>a chill night for putting your mind and to-do list to rest!</p>
-                <p>create a night for focus sessions, timers, checklist on planners and most importantly, RELAXATION!</p>
-            </section>
+            <h2 style="text-align: center; font-family: 'Playfair Display', serif; font-size: 2.2em; color: #8C6F5A; margin-top: 60px;">Let's get started!</h2>
 
-            <section id = "tools">
-                <h2>let's get started!</h2>
-                <h3>checklists!</h3>
-                <img src = "download (4).jpeg" alt = "an aesthetic laptop" />
-                <p><b>checklists!</b> for remembering what you want to get done!</p>
-                <button onclick="window.open('https://pomofocus.io/', '_blank')">time to plan!</button>
-            </section>
+            <div class="content-grid"> <section id="checklists-section">
+                    <h3>checklists!</h3>
+                    <img src="download (4).jpeg" alt="an aesthetic laptop" />
+                    <p><b>checklists! (∩｀-´)⊃ ☆ﾟ.*･｡ﾟ</b> start off studying outlining what you want to get done!</p>
+                    <button onclick="window.open('https://pomofocus.io/', '_blank')">time to plan!</button>
+                </section>
 
-            <section>
-                <h3>timers!</h3> 
-                <img src="exam week.jpeg" alt="Aesthetic timer setup on laptop"> 
-                <p><strong>timers!</strong> for focused study sessions and breaks!</p> 
-                <button onclick="window.open('https://studywithme.io/aesthetic-pomodoro-timer/', '_blank')">time to time!</button>
-            </section>
+                <section id="timers-section">
+                    <h3>timers!</h3>
+                    <img src="exam week.jpeg" alt="Aesthetic timer setup on laptop">
+                    <p><strong>timers! ʕっ•ᴥ•ʔっ ˖°˖✧</strong> hold yourself accountable with some timers!</p>
+                    <button onclick="window.open('https://studywithme.io/aesthetic-pomodoro-timer/', '_blank')">time to time!</button>
+                </section>
 
-            <section>
-                <h3>music, of course!</h3> 
-                <p>no study sessions are complete without music!</p>
-                <div class="video-container">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ZbyxjGE885I?si=0AchgHyrMmVMZZ4E"title="some jazz!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div> 
-                <p>here's a jazz playlist to get you started!</p>
-            </section>
+                <section id="music-section">
+                    <h3><b>music, of course!°˖✧◝(⁰▿⁰)◜✧˖°</b></h3>
+                    <p>no study sessions are complete without music!</p>
+                    <div class="video-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/ZbyxjGE885I?si=0AchgHyrMmVMZZ4E" title="some jazz!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <p>here's a jazz playlist to get you started!</p>
+                </section>
+            </div>
 
-            <section id="links"> 
-                <h2>helpful resources to start off with!</h2> 
-                <ul> 
+            <section id="study-links">
+                <h2>helpful resources to start off with!</h2>
+                <ul>
+                    <li><a href="https://pomofocus.io/" target="_blank">pomodoro timer</a></li>
+                    <li><a href="https://open.spotify.com/playlist/37i9dQZF1DWSSrwtip3vZP" target="_blank">study playlists - spotify</a></li>
+                    <li><a href="https://music.apple.com/us/playlist/study-session/pl.dfd203c2337c456ea7dcead8ec64bab8" target="_blank">study playlists - apple music</a></li>
+                    <li><a href="https://music.youtube.com/playlist?list=RDCLAK5uy_mPolD_J22gS1SKxufARWcTZd1UrAH_0ZI&playnext=1&si=czC2EVLI5wd_DVrI" target="_blank">study playlists - youtube</a></li>
+                    <li></li> </ul>
+            </section>
+        </main>
+
+        <footer id="contact">
+            <h2>Contact Information!</h2> 
+            <p>questions about study tips? Reach out and connect with me on linkedin @ Lu Ighodalo!</p>
+    
+            <div class="social-links-section">
+                <h3>Find me on...</h3>
+                <ul>
                     <li>
-                        <a href="https://pomofocus.io/" target="_blank">pomodoro timer</a></li> 
+                        <a href="https://www.instagram.com/luchiighodalo/" target="_blank">
+                            instagram: luchighodalo
+                        </a>
+                    </li>
                     <li>
-                        <a href="https://open.spotify.com/playlist/37i9dQZF1DWSSrwtip3vZP" target="_blank">study playlists - spotify</a></li>
+                        <a href="https://github.com/lu2400" target="_blank">
+                            github: lu2400
+                        </a>
+                    </li>
                     <li>
-                        <a href="https://music.apple.com/us/playlist/study-session/pl.dfd203c2337c456ea7dcead8ec64bab8" target="_blank">study playlists - apple music</a></li>
-                    <li>
-                        <a href="https://music.youtube.com/playlist?list=RDCLAK5uy_mPolD_J22gS1SKxufARWcTZd1UrAH_0ZI&playnext=1&si=czC2EVLI5wd_DVrI" target="_blank">study playlists - youtube</a></li>
-                    <li>
-                     </ul> 
-                    </section> 
-                </main> 
-                <footer id="contact"> 
-                    <h2>contact information</h2> 
-                    <p>questions about study tips? 
-                        reach out and connect with me on linkedin @ Lu Ighodalo!</p> 
-                </footer> 
-            </div> 
-        </body>
-    </html>
+                        <a href="https://www.linkedin.com/in/lu-ighodalo/" target="_blank">
+                            linkedin: lu-ighodalo
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div> </body> </html>
