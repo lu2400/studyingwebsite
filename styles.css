@@ -15,16 +15,26 @@ container  {
 }
 
 top-bar {
-  background-color: #583e00; /* muted background */
+  background-color: #5d564d; /* muted background */
   color: #fdf3d7; /* dark grey text */
-  padding: 10px 20px;
+  padding: 10px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   text-align: center;
+  height: 60px;
+  position: relative; /* for positioning */
   font-size: 0.9em;
 }
-
+top-bar tagline {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2em;
+  opacity: 0.8; /* slightly faded */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  font-weight: 300; /* light font weight */
+  color: #fdf3d7; /* light text for tagline */
+  margin: 0;
+}
 top-bar.main-nav ul {
   list-style: none;
   padding: 0;
@@ -33,7 +43,18 @@ top-bar.main-nav ul {
   align-items: center;
   gap: 20px; 
 }
-
+top-bar main-nav ul li a {
+  text-decoration: none;
+  color: #FFFFFF; /* white text for links */
+  font-weight: bold;
+  transition: color 0.3s ease;
+  font-size: 1.3em; /* larger font size for links */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* subtle shadow for better readability */
+  padding: 5px 10px; /* padding for better click area */
+}
+top-bar main-nav ul li a:hover {
+  color: #ddbea2; /* faint dull orange on hover */
+}
 header-container {
   background-color: #faf4e9; /* Light background for header */
   padding: 60px 40px;
