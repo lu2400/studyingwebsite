@@ -402,3 +402,150 @@ body.dark-mode #theme-button:hover {
   background: #e1d9c4;
   color: #353534ef; /* dark brown text on hover in dark mode */
 }
+
+.rsvp-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.rsvp-form-container, .focus-status-container {
+  background-color: var(--form-bg-light);
+  padding: 2.5rem;
+  border-radius: 10px;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.05); /* Subtle inner shadow */
+  flex: 1;
+  min-width: 280px;
+  max-width: 480px;
+  border: 1px solid var(--input-border-light);
+  box-sizing: border-box;
+        }
+
+body[data-theme='dark'] .rsvp-form-container, body[data-theme='dark'] .focus-status-container {
+  background-color: var(--form-bg-dark);
+  border: 1px solid var(--input-border-dark);
+}
+
+.rsvp-form .form-group {
+  margin-bottom: 1.2rem;
+}
+
+.rsvp-form label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+  color: var(--text-color-light);
+}
+
+body[data-theme='dark'] .rsvp-form label {
+  color: var(--text-color-dark);
+}
+
+.rsvp-form input[type="text"],
+.rsvp-form input[type="email"] {
+  width: 100%;
+  padding: 0.7rem;
+  border: 1px solid var(--input-border-light);
+  border-radius: 6px;
+  background-color: var(--form-bg-light); /* Explicitly set for consistency */
+  color: var(--text-color-light);
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box;
+ }
+
+body[data-theme='dark'] .rsvp-form input[type="text"],
+body[data-theme='dark'] .rsvp-form input[type="email"] {
+  border: 1px solid var(--input-border-dark);
+  background-color: var(--form-bg-dark);
+  color: var(--text-color-dark);
+}
+
+.rsvp-form input[type="text"]:focus,
+.rsvp-form input[type="email"]:focus {
+  outline: none;
+  border-color: var(--button-hover-light);
+  box-shadow: 0 0 5px rgba(var(--button-hover-light-rgb-r), var(--button-hover-light-rgb-g), var(--button-hover-light-rgb-b), 0.3);
+}
+
+body[data-theme='dark'] .rsvp-form input[type="text"]:focus,
+body[data-theme='dark'] .rsvp-form input[type="email"]:focus {
+  border-color: var(--button-hover-dark);
+  box-shadow: 0 0 5px rgba(var(--button-hover-dark-rgb-r), var(--button-hover-dark-rgb-g), var(--button-hover-dark-rgb-b), 0.3);
+}
+
+.submit-button {
+  background-color: var(--button-bg-light);
+  color: var(--button-text-light);
+  border: none;
+  padding: 0.9rem 1.8rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+  transition: background-color 0.3s ease, transform 0.1s ease, box-shadow 0.3s ease;
+  width: 100%;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+}
+
+body[data-theme='dark'] .submit-button {
+  background-color: var(--button-bg-dark);
+  color: var(--button-text-dark);
+}
+
+.submit-button:hover {
+  background-color: var(--button-hover-light);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+body[data-theme='dark'] .submit-button:hover {
+  background-color: var(--button-hover-dark);
+}
+
+.submit-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.response-message {
+  margin-top: 1rem;
+  padding: 0.8rem;
+  border-radius: 6px;
+  font-weight: 600;
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.response-message.success {
+  background-color: #d4edda; /* Light green */
+  color: #155724; /* Dark green text */
+  border: 1px solid #c3e6cb;
+  visibility: visible;
+  opacity: 1;
+}
+
+.response-message.error {
+   background-color: #f8d7da; /* Light red */
+   color: #721c24; /* Dark red text */
+   border: 1px solid #f5c6cb;
+   visibility: visible;
+   opacity: 1;
+}
+
+body[data-theme='dark'] .response-message.success {
+  background-color: rgba(56, 193, 114, 0.2); /* Transparent green */
+  color: #38c172;
+  border: 1px solid #38c172;
+}
+
+body[data-theme='dark'] .response-message.error {
+  background-color: rgba(227, 52, 47, 0.2); /* Transparent red */
+  color: #e3342f;
+  border: 1px solid #e3342f;
+}
