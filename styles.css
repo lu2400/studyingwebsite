@@ -403,3 +403,19 @@ body.dark-mode #theme-button:hover {
   background: #e1d9c4;
   color: #353534ef; /* dark brown text on hover in dark mode */
 }
+
+.rsvp-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  padding-bottom: 50px;
+  flex-wrap: wrap;
+  margin: auto
+}
+.rsvp-para {
+  width: 55%;
+  padding-right: 10px;
+  font-size: 1.2em;
+  color: #6f6f6f;
+}
