@@ -406,6 +406,8 @@ body.dark-mode #theme-button:hover {
 
 .rsvp-container {
   display: flex;
+  background-color: #f8f4e3;
+  color: #4a4a4a;
   flex-direction: row;
   gap: 20px;
   width: 100%;
@@ -413,9 +415,24 @@ body.dark-mode #theme-button:hover {
   flex-wrap: wrap;
   margin: auto
 }
+.rsvp-participants {
+  width: 40%;
+  background-color: #f8f4e3;
+  color: #4a4a4a;
+  padding-left: 10px;
+  font-size: 1em;
+}
 .rsvp-para {
   width: 55%;
+  background-color: #f8f4e3;
+  color: #4a4a4a;
   padding-right: 10px;
   font-size: 1.2em;
-  color: #6f6f6f;
+}
+.body-dark-mode .rsvp-para {
+  color: #b8b5b5; /* Lighter text in dark mode */
+  background-color: #31291f;
+}
+.body.dark-mode .rsvp-participants, .rsvp-para {
+  background-color: #18110b; /* dark brown background */
 }
