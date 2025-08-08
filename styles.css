@@ -380,7 +380,6 @@ body.dark-mode .social-links-section ul li a:hover {
     color: #788871;
 }
 
-/* Theme Button Styles */
 #theme-button {
   background: linear-gradient(to right, #5f4c3e, #d1ad8cb0); /* gradient background */
   color: #1b120de5; /* dark brown text */
@@ -552,3 +551,83 @@ body.dark-mode #rsvp-form input.error {
   background-color: #f8e7e7;
   border-color: #b40404;
 }
+.modal {
+  display: none;
+  position: fixed; 
+  z-index: 2; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.modal-container {
+  padding: 50px;
+  width: 55%;
+  background-color: #fcfbf7; 
+  color: #4a4a4a;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: monospace;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+body.dark-mode .modal-container {
+    background-color: #31291f;
+    color: #e5d7c4;
+}
+#reduce-motion-btn {
+  background: linear-gradient(to right, #5f4c3e, #d1ad8cb0); /* gradient background */
+  color: #1b120de5; /* dark brown text */
+  border: #020202 3px solid;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-top: auto;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+#reduce-motion-btn:hover {
+  background: linear-gradient(to right, #1b0e01e7, #2c1201); /* reverse gradient on hover */
+  color: #f1e9d1cc; 
+  border: #020202 3px solid; /* subtle border on hover */
+  transform: translateY(-2.5px);
+}
+body.dark-mode #reduce-motion-btn {
+    background: linear-gradient(to right, #140b02da, #312001);
+    color: #afafaed8;
+}
+body.dark-mode #reduce-motion-btn:hover {
+  background: #e1d9c4;
+  color: #353534ef; /* dark brown text on hover in dark mode */
+}
+#close-modal-btn {
+  background: linear-gradient(to right, #5f4c3e, #d1ad8cb0); /* gradient background */
+  color: #1b120de5; /* dark brown text */
+  border: #020202 3px solid;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-top: auto;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+#close-modal-btn:hover {
+  background: linear-gradient(to right, #1b0e01e7, #2c1201); /* reverse gradient on hover */
+  color: #f1e9d1cc; 
+  border: #020202 3px solid; /* subtle border on hover */
+  transform: translateY(-2.5px);
+}
+body.dark-mode #close-modal-btn:hover {
+  background: #e1d9c4;
+  color: #353534ef; /* dark brown text on hover in dark mode */
+}
+
