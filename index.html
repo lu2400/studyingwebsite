@@ -1,168 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale = 1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-        <title>✨studying & self-care!✨</title>
-        <link rel="stylesheet" href="styles.css" />
-        <link rel="icon" href="favicon (1).ico" type="image/x-icon"/>
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>✨studying & self-care!✨</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="favicon (1).ico" type="image/x-icon" />
+  </head>
 
-    <body>
-        <div class="top-bar">
-            <img src="favicon (1).ico" alt="s&s logo" class="site-logo-image" /> 
-            
-            <nav class="main-nav"> 
-                <ul>
-                    <li><a href="#home-section">home</a></li> 
-                    <li><a href="#rsvp">rsvp</a></li> 
-                    <li><a href="#checklists-section">checklists</a></li>
-                    <li><a href="#timers-section">timers</a></li> 
-                    <li><a href="#music-section">music</a></li>
-                    <li><a href="#study-links">resources</a></li>
-                    <li><a href="#contact-section">contact</a></li>
-                    <li><button id="reduce-motion-btn">reduce motion</button></li>
-                    <li><button id="theme-button"><b>toggle dark mode</button></li>
-                </ul>
-            </nav>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header" id="home-section">
+      <div class="top-bar">
+        <a class="brand" href="#home-section" aria-label="Go to home section">
+          <img
+            src="favicon (1).ico"
+            alt="Studying and self-care logo"
+            class="site-logo-image"
+          />
+          <span class="brand-text">studying &amp; self-care</span>
+        </a>
+
+        <nav class="main-nav" aria-label="Primary">
+          <ul>
+            <li><a href="#home-section">home</a></li>
+            <li><a href="#rsvp">rsvp</a></li>
+            <li><a href="#checklists-section">checklists</a></li>
+            <li><a href="#timers-section">timers</a></li>
+            <li><a href="#music-section">music</a></li>
+            <li><a href="#study-links">resources</a></li>
+            <li><a href="#contact-section">contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="top-controls" role="group" aria-label="Display preferences">
+          <button id="reduce-motion-btn" type="button" aria-pressed="false">
+            reduce motion
+          </button>
+          <button id="theme-button" type="button" aria-pressed="false">
+            dark mode
+          </button>
+        </div>
+      </div>
+
+      <div class="container header-container reveal">
+        <h1>✨ Studying and Self-care ✨</h1>
+        <p>
+          Create a personal paradise for grinding work and glowing up! °˖✧◝(⁰▿⁰)◜✧˖°
+          <br />
+          <span>✧٩(ˊᗜˋ*)و✧*｡</span>
+        </p>
+      </div>
+    </header>
+
+    <main id="main-content" class="container">
+      <section class="hero-section reveal" aria-labelledby="hero-title">
+        <div class="hero-image">
+          <img src="download (2).jpeg" alt="A calm desk setup for studying" />
+        </div>
+        <div class="hero-text">
+          <h2 id="hero-title">Soothe your soul while studying</h2>
+          <p>A chill night for putting your mind and to-do list to rest.</p>
+          <p>
+            Create a night for focus sessions, timers, checked off planners, and most
+            importantly, <strong>relaxation</strong>.
+          </p>
+        </div>
+      </section>
+
+      <section id="rsvp" class="reveal" aria-labelledby="rsvp-title">
+        <h2 id="rsvp-title">RSVP!</h2>
+        <div class="rsvp-container">
+          <div class="rsvp-para">
+            <p>
+              Welcome! This is your space for excelling in your studies and finding
+              genuine relaxation. We offer tools to enhance your focus and help you
+              truly recharge. It's all about balancing hard work with essential
+              self-care, so you can thrive.
+            </p>
+          </div>
+
+          <div class="rsvp-participants" aria-live="polite" aria-atomic="true">
+            <h3 class="participants-title">Current attendees</h3>
+            <ul id="participants-list">
+              <li>𓂃⋆.˚ Charlotte from London, UK has RSVP'd.</li>
+              <li>𓂃⋆.˚ Vanessa from Soho, HK has RSVP'd.</li>
+              <li>𓂃⋆.˚ John from NYC, USA has RSVP'd.</li>
+            </ul>
+            <p id="rsvp-count" class="bestie-count">
+              𓂃⋆.˚ 3 people have RSVP'd to this event!
+            </p>
+          </div>
         </div>
 
-        <div class="container">
-            <header class="header-container"> 
-                <h1>✨ Studying and Self-care ✨</h1>
-                <p style = "text-align: center;">
-                 create a personal paradise for grinding work and glowing up!
-                               °˖✧◝(⁰▿⁰)◜✧˖°<br>
-                    <span>✧٩(ˊᗜˋ*)و✧*｡</span> </p>
-            </header>
-
-            <section id="home-section" class="hero-section"> 
-                <div class="hero-image">
-                    <img src="download (2).jpeg" alt="a  desk setup" />
-                </div>
-                <div class="hero-text">
-                    <p>Soothe your Soul while Studying!<br>ヘ(^_^ヘ) ヘ(^o^ヘ)</p>
-                    <p>A chill night for putting your mind and to-do list to rest!</p>
-                    <p>Create a night for focus sessions, timers, checked off planners, and most importantly, <br><strong>RELAXATION!</strong></p>
-                </div>
-            </section>
-
-        <div id="rsvp">
-            <h2>RSVP!</h2>
-            <div class="rsvp-container">
-                <div class="rsvp-para">
-                    <!-- info goes here -->
-                     Welcome! This is your space for excelling in your studies and finding genuine relaxation. 
-                     We offer tools to enhance your focus and help you truly recharge. 
-                     It's all about balancing hard work with essential self-care, so you can truly thrive.
-                </div>
-                <div class="rsvp-participants">
-                    <p>𓂃⋆.˚ Charlotte from London, UK has RSVP'd.</p>
-                    <p>𓂃⋆.˚ Vanessa from Soho, HK has RSVP'd.</p>
-                    <p>𓂃⋆.˚ John from NYC, USA has RSVP'd.</p>
-                <p><span id="rsvp-count">𓂃⋆.˚ 3 people have RSVP'd to this event!</span></p>
-                </div>
+        <div class="form-container">
+          <form id="rsvp-form" title="rsvp-form" novalidate>
+            <div class="form-field">
+              <label for="name">preferred name:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                autocomplete="name"
+                placeholder="e.g., Lu Ighodalo"
+                aria-describedby="name-error"
+              />
+              <p id="name-error" class="field-error" aria-live="polite"></p>
             </div>
 
-            <!--- Sign RSVP Form --->
-            <div class="form-container">
-                <form id="rsvp-form" title="rsvp-form">
-                    <!-- form inputs go here -->
-                    <label for ="name">preferred name:</label>
-                    <input type="text" id="name" name="name" required placeholder="e.g., Lu Ighodalo">
-                    <label for="location">home city & country:</label>
-                    <input type="text" id="location" name="location" required placeholder="e.g., Anaheim, CA, USA">
-                    <label for="email">your e-mail:</label>
-                    <input type="email" id="email" name="email" required placeholder="e.g., your.email@example.com">
-                    <div id = 'responseMessage' class="response-message"></div>
-                </form>
-                <!-- Submit button -->
-                <button id="rsvp-button">**submit rsvp!**</button>
-            </div>      
+            <div class="form-field">
+              <label for="location">home city &amp; country:</label>
+              <input
+                type="text"
+                id="location"
+                name="location"
+                required
+                autocomplete="address-level2"
+                placeholder="e.g., Anaheim, CA, USA"
+                aria-describedby="location-error"
+              />
+              <p id="location-error" class="field-error" aria-live="polite"></p>
+            </div>
+
+            <div class="form-field">
+              <label for="email">your e-mail:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                autocomplete="email"
+                placeholder="e.g., your.email@example.com"
+                aria-describedby="email-error"
+              />
+              <p id="email-error" class="field-error" aria-live="polite"></p>
+            </div>
+
+            <div id="form-errors" class="error-summary" role="alert" aria-live="assertive"></div>
+            <button id="rsvp-button" type="submit">submit rsvp</button>
+          </form>
         </div>
+      </section>
 
-            <main>
-                <h2 style="text-align: center; font-family: 'Playfair Display', serif; font-size: 2.2em; color: #7a7a79; margin-top: 60px;">Let's get started!</h2>
+      <section class="intro-section reveal" aria-labelledby="intro-title">
+        <h2 id="intro-title">Let's get started!</h2>
+      </section>
 
-                <div class="content-grid"> 
-                    <section id="checklists-section">
-                        <h3>checklists!</h3>
-                        <img src="download (4).jpeg" alt="an aesthetic laptop" />
-                        <p><b>checklists! (∩｀-´)⊃ ☆ﾟ.*･｡ﾟ</b> start off studying outlining what you want to get done!</p>
-                        <button onclick="window.open('https://pomofocus.io/', '_blank')">time to plan!</button>
-                    </section>
+      <div class="content-grid">
+        <article id="checklists-section" class="reveal card">
+          <h3>checklists!</h3>
+          <img src="download (4).jpeg" alt="An aesthetic laptop and notebook" />
+          <p>
+            <strong>checklists! (∩｀-´)⊃ ☆ﾟ.*･｡ﾟ</strong> Start off your session by
+            outlining what you want to get done.
+          </p>
+          <a class="button-link" href="https://pomofocus.io/" target="_blank" rel="noopener noreferrer"
+            >time to plan!</a
+          >
+        </article>
 
-                    <section id="timers-section">
-                        <h3>timers!</h3>
-                        <img src="exam week.jpeg" alt="Aesthetic timer setup on laptop">
-                        <p><strong>timers! ʕっ•ᴥ•ʔっ ˖°˖✧</strong> hold yourself accountable with some timers!</p>
-                        <button onclick="window.open('https://studywithme.io/aesthetic-pomodoro-timer/', '_blank')">time to time!</button>
-                    </section>
+        <article id="timers-section" class="reveal card">
+          <h3>timers!</h3>
+          <img src="exam week.jpeg" alt="Aesthetic timer setup on a laptop" />
+          <p>
+            <strong>timers! ʕっ•ᴥ•ʔっ ˖°˖✧</strong> Hold yourself accountable with focus
+            timers.
+          </p>
+          <a
+            class="button-link"
+            href="https://studywithme.io/aesthetic-pomodoro-timer/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >time to time!</a
+          >
+        </article>
 
-                    <section id="music-section">
-                        <h3>music, of course!°˖✧◝(⁰▿⁰)◜✧˖°</h3>
-                        <div class="video-container">
-                            <iframe width="280" height="350" src="https://www.youtube.com/embed/vYsIs1kwJ0E?si=8WBvj8JTtOdSVRcu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
-                        <p>here's a playlist to get you started! (´｡• ᵕ •｡`) ♡</p>
-                        <p>you can find more playlists on spotify, apple music, and youtube in the resources section!</
-                        </p>
-                    </section>
-                </div>
+        <article id="music-section" class="reveal card">
+          <h3>music, of course! °˖✧◝(⁰▿⁰)◜✧˖°</h3>
+          <div class="video-container">
+            <iframe
+              width="280"
+              height="350"
+              src="https://www.youtube.com/embed/vYsIs1kwJ0E?si=8WBvj8JTtOdSVRcu"
+              title="Study music playlist video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              loading="lazy"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <p>Here's a playlist to get you started! (´｡• ᵕ •｡`) ♡</p>
+          <p>
+            You can find more playlists on Spotify, Apple Music, and YouTube in the
+            resources section.
+          </p>
+        </article>
+      </div>
 
-                <section id="study-links">
-                    <h2 style = "color: #7a7a79">helpful resources to start off with!</h2>
-                    <ul>
-                        <li><a href="https://pomofocus.io/" target="_blank">pomodoro timer</a></li>
-                        <li><a href="https://open.spotify.com/playlist/37i9dQZF1DWSSrwtip3vZP" target="_blank">study playlists - spotify</a></li>
-                        <li><a href="https://music.apple.com/us/playlist/study-session/pl.dfd203c2337c456ea7dcead8ec64bab8" target="_blank">study playlists - apple music</a></li>
-                        <li><a href="https://music.youtube.com/playlist?list=RDCLAK5uy_mPolD_J22gS1SKxufARWcTZd1UrAH_0ZI&playnext=1&si=czC2EVLI5wd_DVrI" target="_blank">study playlists - youtube</a></li>
-                        <li></li>
-                    </ul>
-                </section>
-            </main> </div>
+      <section id="study-links" class="reveal" aria-labelledby="resource-title">
+        <h2 id="resource-title">helpful resources to start off with!</h2>
+        <ul class="resource-list">
+          <li><a href="https://pomofocus.io/" target="_blank" rel="noopener noreferrer">pomodoro timer</a></li>
+          <li>
+            <a
+              href="https://open.spotify.com/playlist/37i9dQZF1DWSSrwtip3vZP"
+              target="_blank"
+              rel="noopener noreferrer"
+              >study playlists - spotify</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://music.apple.com/us/playlist/study-session/pl.dfd203c2337c456ea7dcead8ec64bab8"
+              target="_blank"
+              rel="noopener noreferrer"
+              >study playlists - apple music</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://music.youtube.com/playlist?list=RDCLAK5uy_mPolD_J22gS1SKxufARWcTZd1UrAH_0ZI&playnext=1&si=czC2EVLI5wd_DVrI"
+              target="_blank"
+              rel="noopener noreferrer"
+              >study playlists - youtube</a
+            >
+          </li>
+        </ul>
+      </section>
+    </main>
 
-        <footer id="contact-section">
-            <h2>Contact Information!</h2> 
-            <p>questions about study tips? Reach out and connect with me on linkedin @ Lu Ighodalo!</p>
-    
-            <div class="social-links-section">
-                <h3>Find me on...</h3>
-                <ul>
-                    <li>
-                        <a href="https://www.instagram.com/luchiighodalo/" target="_blank">
-                            instagram: luchiighodalo
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/lu2400" target="_blank">
-                            github: lu2400
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/lu-ighodalo/" target="_blank">
-                            linkedin: lu-ighodalo
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </footer>
-    </div> <script src="index.js"></script>
+    <footer id="contact-section">
+      <h2>Contact Information!</h2>
+      <p>Questions about study tips? Reach out and connect with me on LinkedIn @ Lu Ighodalo!</p>
+
+      <div class="social-links-section">
+        <h3>Find me on...</h3>
+        <ul>
+          <li>
+            <a href="https://www.instagram.com/luchiighodalo/" target="_blank" rel="noopener noreferrer">
+              instagram: luchiighodalo
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/lu2400" target="_blank" rel="noopener noreferrer">github: lu2400</a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/lu-ighodalo/" target="_blank" rel="noopener noreferrer">
+              linkedin: lu-ighodalo
+            </a>
+          </li>
+        </ul>
+      </div>
     </footer>
-</div>
-        
-        <script src="index.js"></script>
 
-        <div id="thanks-modal" class="modal">
-            <div class="modal-container">
-            <p id="modal-text">thanks for your submission!</p>
-            <img id="modal-image" src="favicon (1).ico" alt="star emoji" style="width: 100px; height: 100px;"/>
-            <button id="close-modal-btn">close!</button>
-        </div>
+    <div
+      id="thanks-modal"
+      class="modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-title"
+      aria-describedby="modal-text"
+      hidden
+    >
+      <div class="modal-container">
+        <h2 id="modal-title">RSVP received!</h2>
+        <p id="modal-text">Thanks for your submission!</p>
+        <img id="modal-image" src="favicon (1).ico" alt="Sparkly logo icon" />
+        <button id="close-modal-btn" type="button">close</button>
+      </div>
+    </div>
 
-    </body>
+    <script src="index.js"></script>
+  </body>
 </html>
